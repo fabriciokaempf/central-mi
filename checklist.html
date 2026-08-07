@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist · Central da Coprodução</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@300;400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    ul.check { list-style: none; padding-left: 4px; }
+    ul.check li {
+      padding: 8px 0 8px 34px;
+      position: relative;
+      border-bottom: 1px solid var(--creme);
+    }
+    ul.check li:last-child { border-bottom: none; }
+    ul.check li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 10px;
+      width: 18px; height: 18px;
+      border: 2px solid var(--verde-s);
+      border-radius: 6px;
+      background: #fff;
+    }
+    ul.check li.feito { color: var(--txt2); }
+    ul.check li.feito::before {
+      content: '✓';
+      background: var(--verde);
+      border-color: var(--verde);
+      color: var(--creme);
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 18px;
+    }
+    .data {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--terra);
+      margin-left: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Checklist da parceria</h1>
+    <p>O que já fizemos e o que vem agora · Atualizado em 05/08/2026</p>
+  </header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="plano-90-dias.html">Plano de 90 dias</a>
+    <a href="linha-editorial.html">Linha editorial</a>
+    <a href="conteudos-semana-01.html">Semana atual</a>
+    <a href="checklist.html" class="ativo">Checklist</a>
+  </nav>
+  <main>
+    <div class="card">
+      <span class="tag">Conquistas</span>
+      <h2>Já está feito</h2>
+      <ul class="check">
+        <li class="feito">Parceria fechada e alinhada <span class="data">04/08</span></li>
+        <li class="feito">Plano de 90 dias definido <span class="data">05/08</span></li>
+        <li class="feito">Linha editorial do novo momento criada <span class="data">05/08</span></li>
+        <li class="feito">Central da coprodução no ar <span class="data">05/08</span></li>
+        <li class="feito">Conteúdos da Semana 1 entregues <span class="data">05/08</span></li>
+        <li class="feito">Bio do Instagram atualizada <span class="data">05/08</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="tag acento">Com a Bel</span>
+      <h2>Próximos passos · Bel</h2>
+      <ul class="check">
+        <li>Corrigir o botão do curso no Linktree (apontar para a página da Hotmart)</li>
+        <li>Enviar ao Fabricio as informações do Código (valor, alunas, formato de venda, conteúdo)</li>
+        <li>Gravar os 3 reels da Semana 1 (ideal: domingo, numa sessão só)</li>
+        <li>Gravar o CTA novo da aula final da MasterClass (o convite, sem preços)</li>
+        <li>Publicar os conteúdos da semana conforme o calendário</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="tag">Com o Fabricio</span>
+      <h2>Próximos passos · Fabricio</h2>
+      <ul class="check">
+        <li>Fechar o briefing do editor da MasterClass <span class="data">semana 10/08</span></li>
+        <li>Consolidar a operação na Hotmart <span class="data">semana 10/08</span></li>
+        <li>Preparar os conteúdos da Semana 2</li>
+        <li>Montar os painéis de resultados na central</li>
+        <li>Preparar a campanha de oferta da MasterClass (entra no ar na semana 4)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Como funciona esta página</h2>
+      <p>Toda segunda-feira, na nossa reunião, revisamos este checklist juntos: o que foi concluído sobe para as conquistas e os novos passos entram nas listas. Assim ninguém precisa perguntar "onde estamos?", a resposta mora aqui.</p>
+    </div>
+  </main>
+  <footer>
+    Fabricio Kaempf | Estrategista Digital · @fabriciokaempf
+  </footer>
+</body>
+</html>
