@@ -1,35 +1,49 @@
+/* Paleta v2.0 "ciência com colo" · aprovada pela Bel em 14/08/2026 */
 :root {
-  --verde: #2d4a3e;
-  --verde-c: #4a7c6b;
-  --verde-s: #8fb8a8;
-  --creme: #f5f0e8;
-  --creme-e: #ede6d6;
-  --terra: #c4956a;
-  --terra-s: #e8c9a0;
-  --off: #faf8f3;
-  --txt: #1a2820;
-  --txt2: #4a5c53;
-  --rosa: #c9736a;
-  --mostarda: #b8912e;
-  --salvia: #a8b5a0;
+  --azul: #1E2A3A;        /* azul-confiança: autoridade, títulos */
+  --azul-calma: #4F7C8A;  /* subtítulos e rótulos */
+  --verde-eq: #7A8F6B;    /* verde-equilíbrio: herança do sálvia */
+  --areia: #E9DCC7;       /* areia-suavidade */
+  --areia-s: #F3EBDB;     /* areia clara para fundos de destaque */
+  --branco: #F4F4F6;      /* branco-leveza: fundo dominante */
+  --amarelo: #F2B23D;     /* amarelo-alegria: acento, herança do dourado */
+  --terracota: #E07A5F;   /* terracota-acolhimento */
+  --ameixa: #B46A7A;      /* ameixa-sensibilidade: camada alma */
+
+  /* Aliases legados (nomes antigos apontando para a paleta v2) */
+  --verde: var(--azul);
+  --verde-c: var(--azul-calma);
+  --verde-s: var(--verde-eq);
+  --creme: var(--areia-s);
+  --creme-e: var(--areia);
+  --terra: var(--terracota);
+  --terra-s: #F2C9BC;
+  --off: var(--branco);
+  --rosa: var(--ameixa);
+  --mostarda: #A97A15;    /* âmbar escurecido para texto legível */
+  --salvia: var(--verde-eq);
+
+  --txt: #23303F;
+  --txt2: #57646F;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Instrument Sans', 'Segoe UI', sans-serif;
-  background: var(--off);
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  background: var(--branco);
   color: var(--txt);
   line-height: 1.7;
 }
 
 header {
-  background: var(--verde);
-  color: var(--creme);
+  background: var(--areia);
+  color: var(--azul);
   padding: 48px 20px 36px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-bottom: 3px solid var(--amarelo);
 }
 
 header::before {
@@ -37,28 +51,29 @@ header::before {
   position: absolute;
   width: 340px; height: 340px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(30, 42, 58, 0.10);
   top: -140px; right: -100px;
 }
 
 header h1 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-weight: 400;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 500;
   font-size: 2.1rem;
   letter-spacing: -0.5px;
   margin-bottom: 6px;
 }
 
 header p {
-  font-family: 'DM Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 0.72rem;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--verde-s);
+  color: var(--azul-calma);
 }
 
 nav {
-  background: #223b31;
+  background: var(--azul);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -67,7 +82,7 @@ nav {
 }
 
 nav a {
-  color: var(--creme-e);
+  color: var(--areia);
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 6px;
@@ -75,7 +90,7 @@ nav a {
 }
 
 nav a:hover, nav a.ativo {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
   color: #fff;
 }
 
@@ -88,24 +103,24 @@ main {
 .card {
   background: #fff;
   border-radius: 14px;
-  border: 1px solid var(--creme-e);
+  border: 1px solid var(--areia);
   padding: 26px 30px;
   margin-bottom: 20px;
-  box-shadow: 0 1px 5px rgba(45, 74, 62, 0.06);
+  box-shadow: 0 1px 5px rgba(30, 42, 58, 0.06);
 }
 
 .card h2 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-weight: 600;
-  color: var(--verde);
+  color: var(--azul);
   font-size: 1.45rem;
   margin-bottom: 10px;
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--creme);
+  border-bottom: 2px solid var(--areia-s);
 }
 
 .card h3 {
-  color: var(--verde-c);
+  color: var(--azul-calma);
   font-size: 1rem;
   margin: 16px 0 6px;
 }
@@ -116,7 +131,7 @@ main {
 
 .card li { margin-bottom: 6px; color: var(--txt); }
 
-.card li::marker { color: var(--terra); }
+.card li::marker { color: var(--terracota); }
 
 .grid {
   display: grid;
@@ -126,8 +141,8 @@ main {
 
 a.botao {
   display: inline-block;
-  background: var(--verde);
-  color: var(--creme);
+  background: var(--azul);
+  color: var(--branco);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 30px;
@@ -135,13 +150,14 @@ a.botao {
   margin-top: 8px;
 }
 
-a.botao:hover { background: var(--verde-c); }
+a.botao:hover { background: var(--azul-calma); }
 
 .tag {
   display: inline-block;
-  font-family: 'DM Mono', monospace;
-  background: var(--creme);
-  color: var(--verde-c);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background: var(--areia-s);
+  color: var(--azul-calma);
   font-size: 0.68rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -150,14 +166,14 @@ a.botao:hover { background: var(--verde-c); }
   margin-bottom: 10px;
 }
 
-.tag.acento { background: #f3ecd8; color: var(--mostarda); }
+.tag.acento { background: #FBEED3; color: var(--mostarda); }
 
 footer {
   text-align: center;
   color: var(--txt2);
   font-size: 0.82rem;
   padding: 26px;
-  border-top: 1px solid var(--creme-e);
+  border-top: 1px solid var(--areia);
 }
 
 @media (max-width: 600px) {
