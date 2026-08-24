@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Turma Acompanhada · Ação orgânica · Maria Izabel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&family=Caveat:wght@600&display=swap">
+
+<style>
+:root{
+  --ground:#F5F5F7;
+  --surface:#FFFFFF;
+  --warm:#F2EBDD;
+  --warm-deep:#E9DCC7;
+  --ink:#1E2A3A;
+  --body:#333F4E;
+  --panel:#1E2A3A;
+  --panel-ink:#F5F5F7;
+  --panel-mute:#AEBECC;
+  --panel-line:rgba(245,245,247,.16);
+  --calma:#3B6472;
+  --mute:#6C7683;
+  --line:#DCE0E5;
+  --line-soft:#E8EBEF;
+  --accent:#F2B23D;
+  --accent-ink:#8A5D08;
+  --verde:#57704A;
+  --ameixa:#94505F;
+  --shadow:0 1px 2px rgba(30,42,58,.04), 0 10px 26px -16px rgba(30,42,58,.18);
+  --measure:41rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#121A23;
+    --surface:#1A2430;
+    --warm:#22303C;
+    --warm-deep:#2A3846;
+    --ink:#EAEFF4;
+    --body:#C4CFDA;
+    --panel:#233040;
+    --panel-ink:#F2F6FA;
+    --panel-mute:#A9BCCB;
+    --panel-line:rgba(242,246,250,.14);
+    --calma:#8FB8C5;
+    --mute:#94A2B0;
+    --line:#2C3947;
+    --line-soft:#243040;
+    --accent:#F2B23D;
+    --accent-ink:#F3C069;
+    --verde:#A0B790;
+    --ameixa:#CD8E9C;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 12px 30px -18px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#121A23;
+  --surface:#1A2430;
+  --warm:#22303C;
+  --warm-deep:#2A3846;
+  --ink:#EAEFF4;
+  --body:#C4CFDA;
+  --panel:#233040;
+  --panel-ink:#F2F6FA;
+  --panel-mute:#A9BCCB;
+  --panel-line:rgba(242,246,250,.14);
+  --calma:#8FB8C5;
+  --mute:#94A2B0;
+  --line:#2C3947;
+  --line-soft:#243040;
+  --accent:#F2B23D;
+  --accent-ink:#F3C069;
+  --verde:#A0B790;
+  --ameixa:#CD8E9C;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 12px 30px -18px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--body);
+  font-family:Montserrat,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px;
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 22px}
+.col{max-width:100%}
+
+/* ---------- type ---------- */
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;text-wrap:balance;margin:0;color:var(--ink)}
+h1{font-size:clamp(2.3rem,7vw,3.5rem);font-weight:700;line-height:1.05;letter-spacing:-.015em}
+h2{font-size:clamp(1.55rem,4.4vw,2rem);font-weight:600;line-height:1.2}
+h3{font-size:1.2rem;font-weight:600;line-height:1.35}
+h4{font-family:Montserrat,sans-serif;font-size:.98rem;font-weight:700;margin:0;color:var(--ink);letter-spacing:.005em}
+p{margin:0 0 1.05em}
+a{color:var(--calma)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+strong{font-weight:600;color:var(--ink)}
+.eyebrow{
+  font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--calma);margin:0 0 .85rem;line-height:1.5
+}
+.lede{font-size:1.08rem;color:var(--mute);line-height:1.68}
+
+/* Bel's short key phrases: elegant, still readable */
+.voice{
+  font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:500;
+  font-size:1.14rem;line-height:1.5;color:var(--ink);
+}
+
+/* ---------- header ---------- */
+header.top{
+  background:var(--panel);color:var(--panel-ink);
+  padding:clamp(52px,10vw,88px) 0 clamp(40px,7vw,64px);
+  border-bottom:3px solid var(--accent);
+}
+header.top .eyebrow{color:var(--accent)}
+header.top h1{color:var(--panel-ink)}
+header.top .lede{color:var(--panel-mute);margin-top:1.15rem}
+.tagline{
+  font-family:Caveat,cursive;font-size:1.75rem;color:var(--accent);
+  margin:.7rem 0 0;font-weight:600;line-height:1.25
+}
+.meta-row{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin:2.4rem 0 0;
+  border-top:1px solid var(--panel-line);
+}
+@media(min-width:620px){.meta-row{grid-template-columns:repeat(4,1fr)}}
+.meta-row div{padding:1rem 1rem 1rem 0}
+.meta-row dt{font-size:.64rem;letter-spacing:.15em;text-transform:uppercase;color:var(--panel-mute);opacity:.85;margin:0 0 .2rem}
+.meta-row dd{margin:0;font-size:.95rem;font-weight:600;color:var(--panel-ink);line-height:1.35;word-break:break-word}
+
+/* ---------- sticky nav ---------- */
+nav.toc{
+  background:var(--surface);border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:20;
+}
+nav.toc .wrap{max-width:none;padding:0}
+nav.toc ol{
+  list-style:none;margin:0 auto;padding:.7rem 22px;max-width:1080px;
+  display:flex;gap:1.35rem;overflow-x:auto;scrollbar-width:thin;
+  counter-reset:t;
+}
+nav.toc li{counter-increment:t;flex:none}
+nav.toc a{
+  text-decoration:none;color:var(--mute);font-size:.8rem;font-weight:600;
+  display:inline-flex;gap:.4rem;align-items:baseline;white-space:nowrap;padding:.2rem 0;
+}
+nav.toc a::before{
+  content:counter(t,decimal-leading-zero);
+  font-size:.66rem;font-weight:700;color:var(--accent-ink);font-variant-numeric:tabular-nums;
+}
+nav.toc a:hover{color:var(--ink)}
+
+/* ---------- sections ---------- */
+section{padding:clamp(44px,7vw,72px) 0;border-bottom:1px solid var(--line-soft)}
+section:last-of-type{border-bottom:0}
+.sec-head{margin-bottom:2.1rem}
+
+/* ---------- cards ---------- */
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:5px;
+  padding:1.5rem 1.6rem;box-shadow:var(--shadow);
+}
+.grid{display:grid;gap:1rem}
+@media(min-width:640px){.g2{grid-template-columns:repeat(2,1fr)}}
+.g3{grid-template-columns:1fr}
+
+.note{
+  border-left:3px solid var(--accent);background:var(--warm);
+  padding:1.1rem 1.3rem;margin:1.7rem 0;border-radius:0 4px 4px 0;
+}
+.note.alert{border-left-color:var(--ameixa)}
+.note.alert .eyebrow{color:var(--ameixa)}
+.note p:last-child{margin-bottom:0}
+.note .eyebrow{margin-bottom:.45rem}
+
+/* ---------- chips ---------- */
+.chip{
+  display:inline-block;font-size:.64rem;font-weight:700;letter-spacing:.11em;
+  text-transform:uppercase;padding:.24em .6em;border-radius:2px;
+  border:1px solid currentColor;white-space:nowrap;
+}
+.c-bel{color:var(--ameixa)}
+.c-fran{color:var(--verde)}
+.c-fab{color:var(--calma)}
+
+/* ---------- tables ---------- */
+.tw{
+  overflow-x:auto;margin:1.7rem 0;border:1px solid var(--line);
+  border-radius:5px;background:var(--surface);
+}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:.88rem;line-height:1.55}
+th,td{padding:.72rem .9rem;text-align:left;border-bottom:1px solid var(--line-soft);vertical-align:top}
+thead th{
+  font-size:.65rem;letter-spacing:.13em;text-transform:uppercase;color:var(--calma);
+  font-weight:700;background:var(--warm);border-bottom:1px solid var(--line);white-space:nowrap;
+}
+tbody tr:last-child td{border-bottom:0}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600;color:var(--ink)}
+tr.total td{background:var(--warm);font-weight:700;border-top:2px solid var(--ink);color:var(--ink)}
+tr.price td{background:var(--panel);color:var(--panel-ink)}
+tr.price td strong{color:var(--panel-ink)}
+tr.price td.num{color:var(--accent);font-size:1.05rem}
+
+/* ---------- timeline ---------- */
+.tl{list-style:none;margin:1.9rem 0 0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:23px;top:16px;bottom:16px;width:1px;background:var(--line)}
+.tl > li{position:relative;padding:0 0 1.7rem 64px}
+.day{
+  position:absolute;left:0;top:-2px;width:47px;height:47px;border-radius:50%;
+  background:var(--ground);border:1px solid var(--line);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-variant-numeric:tabular-nums;z-index:1;
+}
+.day b{font-size:1.02rem;font-weight:700;line-height:1;font-family:"Playfair Display",serif;color:var(--ink)}
+.day span{font-size:.52rem;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);margin-top:2px}
+.tl li.key .day{background:var(--panel);border-color:var(--panel)}
+.tl li.key .day b{color:var(--panel-ink)}
+.tl li.key .day span{color:var(--accent)}
+.tl h3{margin-bottom:.35rem;font-size:1.1rem}
+.tl .phase{
+  font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);
+  font-weight:700;margin-bottom:.45rem;display:block;line-height:1.6
+}
+.tl p{margin-bottom:.5rem;font-size:.94rem}
+.tl .who{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.65rem}
+
+/* ---------- reference blocks (were accordions) ---------- */
+.ref{
+  background:var(--surface);border:1px solid var(--line);border-radius:5px;
+  margin:1.4rem 0;box-shadow:var(--shadow);overflow:hidden;
+}
+.ref-h{
+  margin:0;padding:.95rem 1.4rem;font-family:Montserrat,sans-serif;
+  font-size:.82rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--calma);background:var(--warm);border-bottom:1px solid var(--line);
+}
+.ref-b{padding:1.5rem 1.4rem}
+.ref-b > :last-child{margin-bottom:0}
+
+/* ---------- script beats ---------- */
+.beat{margin:0 0 1.8rem;padding:0}
+.beat:last-child{margin-bottom:0}
+.beat + .beat{border-top:1px solid var(--line-soft);padding-top:1.5rem}
+.beat h4{margin-bottom:.3rem}
+.beat .vis{font-size:.83rem;color:var(--mute);margin:0 0 .7rem;line-height:1.6}
+.beat .vis b{color:var(--calma);font-weight:600}
+
+/* the spoken lines: readable body face, clearly marked as speech */
+.say{
+  background:var(--warm);border-left:3px solid var(--accent);
+  padding:1rem 1.15rem .95rem;margin:0 0 .7rem;border-radius:0 4px 4px 0;
+  font-size:.95rem;line-height:1.7;color:var(--ink);
+}
+.say::before{
+  content:"O que ela fala";display:block;
+  font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent-ink);margin-bottom:.5rem;
+}
+.say p{margin:0 0 .7em}
+.say p:last-child{margin-bottom:0}
+.interact{font-size:.83rem;color:var(--calma);font-weight:600;margin:0;line-height:1.55}
+
+/* inline voice inside notes/cards stays italic serif, never a wall */
+.note .voice,.card .voice,.ref-b .voice{display:block}
+
+/* ---------- lists ---------- */
+ul.check{list-style:none;padding:0;margin:1.5rem 0;display:grid;gap:.5rem}
+ul.check li{
+  display:flex;gap:.75rem;align-items:flex-start;
+  padding:.8rem .95rem;background:var(--surface);border:1px solid var(--line);
+  border-radius:4px;font-size:.92rem;line-height:1.6;
+}
+ul.check li::before{
+  content:"";flex:none;width:14px;height:14px;margin-top:.35em;
+  border:1.5px solid var(--calma);border-radius:2px;
+}
+ul.check li.block::before{border-color:var(--ameixa);background:var(--ameixa)}
+ul.plain{padding-left:1.2rem;margin:0 0 1.05em}
+ul.plain li{margin-bottom:.5em}
+ol{padding-left:1.3rem}
+
+/* ---------- kpi ---------- */
+.kpi{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:5px;overflow:hidden;margin:0}
+@media(min-width:620px){.kpi{grid-template-columns:repeat(3,1fr)}}
+.kpi div{background:var(--surface);padding:1.25rem 1.3rem}
+.kpi dt{font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--calma);font-weight:700;margin-bottom:.45rem}
+.kpi dd{margin:0}
+.kpi .big{font-family:"Playfair Display",serif;font-size:1.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;color:var(--ink)}
+.kpi .sub{font-size:.85rem;color:var(--mute);margin-top:.4rem;display:block;line-height:1.55}
+
+footer{background:var(--panel);color:var(--panel-mute);padding:2.4rem 0;font-size:.85rem}
+footer strong{color:var(--panel-ink)}
+footer p{margin:0}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <p class="eyebrow">Ação de vendas orgânica &middot; Coprodução Kaempf</p>
+    <h1>Turma Acompanhada</h1>
+    <p class="tagline">30 dias com o mapa na mão e a Bel junto</p>
+    <p class="lede">Uma janela de dez dias para vender O Código sem um real de tráfego, apoiada em três coisas que já existem: a base do Instagram, a página nova no ar e dez anos de consultório.</p>
+    <dl class="meta-row">
+      <div><dt>Janela de venda</dt><dd>10 dias</dd></div>
+      <div><dt>Verba</dt><dd>R$ 0</dd></div>
+      <div><dt>Produto</dt><dd>R$ 697</dd></div>
+      <div><dt>Destino</dt><dd>mariaizabeldarosa.com.br/codigo</dd></div>
+    </dl>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <ol>
+      <li><a href="#tese">A tese</a></li>
+      <li><a href="#oferta">A oferta</a></li>
+      <li><a href="#cronograma">O cronograma</a></li>
+      <li><a href="#stories">Os stories</a></li>
+      <li><a href="#feed">Os posts</a></li>
+      <li><a href="#live">A live</a></li>
+      <li><a href="#dm">As DMs</a></li>
+      <li><a href="#papeis">Quem faz o quê</a></li>
+      <li><a href="#antes">Antes de abrir</a></li>
+      <li><a href="#metas">As metas</a></li>
+    </ol>
+  </div>
+</nav>
+
+<!-- =============== TESE =============== -->
+<section id="tese">
+  <div class="wrap">
+    <div class="sec-head col">
+      <p class="eyebrow">01 &middot; A tese</p>
+      <h2>O problema nunca foi o preço. Foi a falta de motivo para comprar hoje.</h2>
+    </div>
+    <div class="col">
+      <p>O Código está pronto, validado e parado. A base da Bel nunca recusou a oferta: ela nunca viu a oferta. A VSL antiga teve 123 visualizações em treze meses, e é esse o diagnóstico inteiro. Distribuição, não conversão.</p>
+      <p>Mas distribuição sozinha não resolve, porque um curso gravado sem data não tem por que ser comprado hoje em vez de daqui a seis meses. Por isso a ação não vende "um curso gravado". Ela vende <strong>a primeira turma acompanhada do Código</strong>: o mesmo conteúdo, com a Bel presente ao vivo dentro de uma janela definida.</p>
+      <p>Isso resolve as duas coisas de uma vez. Cria urgência que é verdadeira, porque a data existe de fato. E ataca o gargalo real da conversão, que não é a mãe duvidar da Bel, é a mãe duvidar de si mesma.</p>
+
+      <div class="note">
+        <p class="eyebrow">O que trava a compra, de verdade</p>
+        <p>Ela não pergunta "será que funciona". Ela pergunta <strong>"será que eu vou conseguir aplicar, já que não consegui das outras vezes"</strong>. Nenhuma prova de autoridade move essa agulha. Só presença humana na entrega move.</p>
+      </div>
+
+      <h3 style="margin-top:2.4rem">A segunda decisão: lista fora do Instagram</h3>
+      <p>Durante o aquecimento, quem levanta a mão entra numa lista de transmissão no WhatsApp. O Instagram entrega um post para uma fração dos seguidores; a lista entrega para todos que optaram por entrar.</p>
+      <p>Mesmo que a ação venda pouco, a Bel termina com uma lista de mães quentes que vale mais que o faturamento da primeira rodada. É o ativo que faz a segunda ação abrir com vantagem.</p>
+
+      <div class="note alert">
+        <p class="eyebrow">Cuidado operacional</p>
+        <p>Lista de transmissão apenas para avisos, montada só com quem pediu para entrar. Nada de disparo em massa nem de resposta automática, pelo histórico de bloqueio de número neste projeto. Conversa individual é manual, sempre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== OFERTA =============== -->
+<section id="oferta">
+  <div class="wrap">
+    <div class="sec-head col">
+      <p class="eyebrow">02 &middot; A oferta</p>
+      <h2>Preço mantido. Valor aumentado.</h2>
+      <p class="lede">Os R$ 697 não se movem. Quem já pagou esse valor não pode ser desrespeitado, e o preço é a âncora que sustenta o Clube e a imersão depois. O que muda é o que vai junto.</p>
+    </div>
+
+    <div class="col">
+      <p>O stack foi montado por decomposição de problemas: cada item resolve uma coisa específica que a mãe precisa fazer, ou um medo específico que a trava. Nenhum valor foi inflado. Ela consegue justificar cada número olhando na câmera.</p>
+    </div>
+
+    <div class="tw">
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Resolve</th><th style="text-align:right">Valor</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>O Código completo</strong><br><span style="color:var(--mute);font-size:.86rem">5 módulos, os 5 pilares, a Mandala</span></td><td>O mapa do desenvolvimento de 0 a 6</td><td class="num">R$ 697</td></tr>
+          <tr><td><strong>3 Encontros ao Vivo com a Bel</strong><br><span style="color:var(--mute);font-size:.86rem">grupo, 60 a 75 min, um por semana</span></td><td>"Não vou conseguir aplicar sozinha"</td><td class="num">R$ 597</td></tr>
+          <tr><td><strong>Mapa do Meu Filho</strong><br><span style="color:var(--mute);font-size:.86rem">caso analisado nominalmente, 10 vagas</span></td><td>"Meu caso é diferente"</td><td class="num">R$ 250</td></tr>
+          <tr><td><strong>MasterClass Por Trás da Birra</strong><br><span style="color:var(--mute);font-size:.86rem">2h05, 13 aulas</span></td><td>A birra especificamente</td><td class="num">R$ 197</td></tr>
+          <tr><td><strong>Guia de Atividades 0 a 6</strong></td><td>O que fazer junto com ele</td><td class="num">R$ 147</td></tr>
+          <tr><td><strong>Kit Socorro</strong><br><span style="color:var(--mute);font-size:.86rem">áudios com a frase pronta para 12 momentos</span></td><td>"Eu entendo, mas na hora eu travo"</td><td class="num">R$ 97</td></tr>
+          <tr><td><strong>Quando o outro adulto desautoriza</strong><br><span style="color:var(--mute);font-size:.86rem">guia: pai, avó, escola</span></td><td>O adulto que atrapalha</td><td class="num">R$ 97</td></tr>
+          <tr><td><strong>Caminho Mínimo</strong><br><span style="color:var(--mute);font-size:.86rem">3 aulas essenciais e checklist de 7 dias</span></td><td>"Não vou ter tempo"</td><td class="num">R$ 47</td></tr>
+          <tr class="total"><td colspan="2">Valor total</td><td class="num">R$ 2.129</td></tr>
+          <tr class="price"><td colspan="2"><strong>Investimento na Turma Acompanhada</strong></td><td class="num">R$ 697</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col">
+      <h3>A âncora principal não é essa soma</h3>
+      <p>A soma do stack é reforço. A âncora que decide é a alternativa real, e ela é verificável:</p>
+      <div class="note">
+        <p class="voice" style="margin:0">"Um ciclo de acompanhamento no consultório são doze sessões. A R$ 250, dá três mil reais, e atende uma família por vez. O Código, com a Bel junto ao vivo, sai por seiscentos e noventa e sete."</p>
+      </div>
+      <p>São 4,3 vezes o preço, sem nenhuma inflação. E é um número que ela sustenta com naturalidade, porque sai da própria agenda dela.</p>
+
+      <h3 style="margin-top:2.2rem">A ordem de apresentação do preço</h3>
+      <p>Mesma informação, efeito oposto conforme a ordem. Revelar a parcela antes do valor cheio parece esconder o preço; depois, parece facilitar.</p>
+      <ul class="plain">
+        <li>Custo da alternativa (R$ 3.000 no consultório)</li>
+        <li>Tudo o que está incluso</li>
+        <li>O valor cheio: R$ 697</li>
+        <li>Só então: ou 12x de R$ 72,09</li>
+        <li>A garantia</li>
+      </ul>
+      <p>E declarar o total parcelado em letra menor, R$ 865,08 com juros da plataforma. Custa quase nada em conversão e compra credibilidade enorme com um público que já foi enganado antes.</p>
+      <p><strong>Trocar a conta por dia.</strong> A página hoje diz "menos de R$ 2,40 por dia". Além de depender de arredondamento para fechar, é o tipo de aritmética que sinaliza vendedor e derruba a autoridade de terapeuta. No lugar, algo que ela sustenta de boca: <span class="voice">"R$ 72,09 por mês. Menos de um terço de uma única sessão de terapia infantil."</span></p>
+      <p><strong>Destacar o PIX.</strong> Boa parte da objeção de preço nesse público é limite de cartão estourado, não falta de dinheiro. PIX à vista e pagamento em dois cartões resolvem venda que parecia perdida.</p>
+    </div>
+
+    <div class="grid g2" style="margin-top:2.4rem">
+      <div class="card">
+        <p class="eyebrow">A garantia, refeita</p>
+        <h3 style="margin-bottom:.6rem">Garantia do Primeiro Mês</h3>
+        <p style="color:var(--mute);font-size:.94rem">Trinta dias incondicionais, no lugar dos sete atuais. Na Hotmart é configuração, não custo novo.</p>
+        <p style="font-size:.94rem">Sete dias é o mínimo que a lei já obriga, então não diferencia nada. Pior: expira antes de a promessa se cumprir, já que a própria página diz que as mudanças aparecem "ao longo das primeiras semanas". Trinta dias cobre o tempo real do resultado.</p>
+        <p style="font-size:.94rem;margin-bottom:0"><strong>Reforço de custo zero:</strong> "se você pedir reembolso, o Guia de Atividades continua seu".</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Escassez, e só a verdadeira</p>
+        <h3 style="margin-bottom:.6rem">O que fecha e o que não fecha</h3>
+        <p style="font-size:.94rem">As 10 vagas do Mapa do Meu Filho são o teto real da agenda: dez casos são de três a quatro horas de trabalho clínico. Os encontros têm data marcada.</p>
+        <p style="font-size:.94rem"><strong>A frase que precisa ser dita, literalmente:</strong></p>
+        <p class="voice" style="margin-bottom:0">"O curso não sai do ar. O que fecha é essa condição: os encontros ao vivo comigo e os bônus da turma. Depois disso ele volta a ser o que sempre foi, um curso gravado excelente, mas sem mim junto."</p>
+      </div>
+    </div>
+
+    <div class="note alert" style="max-width:70ch">
+      <p class="eyebrow">Regra de ferro</p>
+      <p>O que for anunciado como limitado tem que ser cumprido. Se o pacote fecha domingo às 23h59, ele fecha. Quem mandar mensagem na segunda paga sem os bônus. Uma única exceção pública destrói a credibilidade de todas as ações futuras.</p>
+    </div>
+
+    <div class="col">
+      <h3 style="margin-top:2.2rem">Um detalhe que passou batido</h3>
+      <p>A garantia que está no ar hoje se chama <strong>"Garantia Presença Total"</strong>. A Bel vetou o mecanismo "Presença Parcial" em agosto porque culpabilizava a mãe, e "Presença Total" implica, por oposição, que a presença dela hoje é parcial. O veto voltou pela porta dos fundos, no bloco mais sensível da página. Precisa ser renomeado junto com a ampliação do prazo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============== CRONOGRAMA =============== -->
+<section id="cronograma">
+  <div class="wrap">
+    <div class="sec-head col">
+      <p class="eyebrow">03 &middot; O cronograma</p>
+      <h2>Dez dias, com quase tudo gravado antes de abrir</h2>
+      <p class="lede">O recurso mais escasso da operação é o tempo de gravação. Por isso o conteúdo sai todo em dois blocos, antes do dia 1, e a janela fica leve. Durante a janela ela faz três coisas apenas: stories, DM e a live.</p>
+    </div>
+
+    <ol class="tl">
+      <li>
+        <span class="day"><b>0</b><span>prep</span></span>
+        <span class="phase">Preparação &middot; sete dias antes</span>
+        <h3>Gravar tudo e testar tudo</h3>
+        <p>Dois blocos de gravação: saem os 5 posts de feed e os 28 stories. Compra teste real no checkout, com estorno. Link testado no navegador interno do Instagram, iOS e Android. Datas dos três encontros bloqueadas na agenda. Kit Socorro gravado. Lista de transmissão criada.</p>
+        <div class="who"><span class="chip c-bel">Bel grava</span><span class="chip c-fran">Fran agenda</span><span class="chip c-fab">Fabricio testa</span></div>
+      </li>
+      <li>
+        <span class="day"><b>1</b><span>dia</span></span>
+        <span class="phase">Aquecimento &middot; captação da lista</span>
+        <h3>A cena que ninguém filma</h3>
+        <p>O post de identificação no feed e a primeira caixinha nos stories. Nenhuma menção a preço, curso ou compra. Quem responde a caixinha recebe o convite da lista na DM. A captação começa aqui e ganha reforço com palavra-chave nos dias 2 e 4.</p>
+        <div class="who"><span class="chip c-fran">Fran publica</span><span class="chip c-bel">Bel responde DM</span></div>
+      </li>
+      <li>
+        <span class="day"><b>2</b><span>dia</span></span>
+        <span class="phase">Aquecimento</span>
+        <h3>Por que as técnicas não funcionaram</h3>
+        <p>O mecanismo: o cérebro em obra, o alarme, a co-regulação. É o dia que tira a culpa das costas dela com ciência, e o que mais gera DM.</p>
+        <div class="who"><span class="chip c-fran">Fran publica</span><span class="chip c-bel">Bel responde DM</span></div>
+      </li>
+      <li>
+        <span class="day"><b>3</b><span>dia</span></span>
+        <span class="phase">Aquecimento</span>
+        <h3>A virada: o mapa no lugar do palpite</h3>
+        <p>A pergunta que muda o olhar. Entra o gancho da herança emocional, o mais forte do arsenal dela para esse avatar.</p>
+        <div class="who"><span class="chip c-fran">Fran publica</span><span class="chip c-bel">Bel responde DM</span></div>
+      </li>
+      <li>
+        <span class="day"><b>4</b><span>dia</span></span>
+        <span class="phase">Aquecimento &middot; aviso honesto</span>
+        <h3>Prova e o aviso do que vem</h3>
+        <p>As histórias reais. E o aviso: "semana que vem eu vou abrir uma turma. Se não for seu momento, tudo bem, o conteúdo continua o mesmo aqui." Esse aviso reduz descadastro e aumenta a confiança de quem fica. As cinco depoentes publicam story marcando a Bel.</p>
+        <div class="who"><span class="chip c-bel">Bel avisa</span><span class="chip c-fran">Fran aciona depoentes</span></div>
+      </li>
+      <li class="key">
+        <span class="day"><b>5</b><span>abre</span></span>
+        <span class="phase">Abertura</span>
+        <h3>A Turma Acompanhada abre</h3>
+        <p>A oferta inteira em uma mensagem: para quem é, o que é, a turma, a data dos encontros, as 10 vagas, o preço, a garantia, o link. Primeira mensagem na lista do WhatsApp, escrita como se fosse para uma mãe só. As primeiras 48 horas costumam concentrar o primeiro pico de vendas.</p>
+        <div class="who"><span class="chip c-bel">Bel abre</span><span class="chip c-fran">Fran publica</span><span class="chip c-fab">Fabricio monitora</span></div>
+      </li>
+      <li>
+        <span class="day"><b>6</b><span>dia</span></span>
+        <span class="phase">Prova</span>
+        <h3>Um depoimento por vez</h3>
+        <p>Nunca os cinco de uma vez. Story com o vídeo completo, feed com o corte de 40 segundos, e sempre com contexto antes: "a Camila chegou aqui achando que o filho tinha algo errado".</p>
+        <div class="who"><span class="chip c-fran">Fran publica</span></div>
+      </li>
+      <li class="key">
+        <span class="day"><b>7</b><span>live</span></span>
+        <span class="phase">O pico da campanha</span>
+        <h3>Live de aprofundamento</h3>
+        <p>Cerca de 70 minutos no Instagram, não em plataforma externa, para capturar quem passa. Lembretes na lista 24h e 1h antes. A live não é o evento de venda: é o evento que qualifica quem entra na DM.</p>
+        <div class="who"><span class="chip c-bel">Bel ao vivo</span><span class="chip c-fran">Fran lembra a lista</span></div>
+      </li>
+      <li>
+        <span class="day"><b>8</b><span>dia</span></span>
+        <span class="phase">Objeção</span>
+        <h3>Preço e tempo, de frente</h3>
+        <p>A objeção do preço tratada sem desconto: a comparação real com o consultório e o parcelamento exato. E a do tempo: o formato, a duração das aulas, o Caminho Mínimo.</p>
+        <div class="who"><span class="chip c-bel">Bel grava stories</span></div>
+      </li>
+      <li>
+        <span class="day"><b>9</b><span>dia</span></span>
+        <span class="phase">Objeção &middot; maior retorno da ação</span>
+        <h3>"Meu caso é diferente" e a DM ativa</h3>
+        <p>A objeção mais pesada do avatar, e é aqui que o Mapa do Meu Filho vende sozinho. Este é o dia de maior retorno: base pequena e quente converte na conversa individual, não no post. Falar com quem entrou na lista e não clicou, quem viu todos os stories, quem assistiu à live.</p>
+        <div class="who"><span class="chip c-bel">Bel nos casos quentes</span><span class="chip c-fran">Fran triagem</span></div>
+      </li>
+      <li class="key">
+        <span class="day"><b>10</b><span>fecha</span></span>
+        <span class="phase">Fechamento</span>
+        <h3>Fecha às 23h59, e fecha mesmo</h3>
+        <p>Aviso de manhã, de tarde e de noite, com a contagem real de vagas se ainda houver. Um último story dela falando para a câmera, sem edição e sem trilha. No dia seguinte, o post de agradecimento com o número real de fundadoras e o convite para a lista de espera da próxima turma.</p>
+        <div class="who"><span class="chip c-bel">Bel fecha</span><span class="chip c-fab">Fabricio apura</span></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- =============== STORIES =============== -->
+<section id="stories">
+  <div class="wrap">
+    <div class="sec-head col">
+      <p class="eyebrow">04 &middot; Os stories</p>
+      <h2>Cinco dias em arco narrativo</h2>
+      <p class="lede">Vinte e oito stories, todos ela falando na câmera. Nos dias 1 a 4 não existe link, não existe preço e não existe produto. Se vender antes do dia 5, o arco morre.</p>
+    </div>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Dia</th><th>Tensão</th><th>O que ela sente no fim</th><th>Loop que fica aberto</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1</strong></td><td>A cena real</td><td>"Ela está falando de mim"</td><td>"Amanhã eu explico por que não funcionou"</td></tr>
+          <tr><td><strong>2</strong></td><td>Por que falhou</td><td>"Não era eu que era ruim"</td><td>"Existe uma pergunta que muda tudo"</td></tr>
+          <tr><td><strong>3</strong></td><td>A virada</td><td>"Existe outro jeito de olhar"</td><td>"Amanhã eu mostro as mensagens"</td></tr>
+          <tr><td><strong>4</strong></td><td>A prova</td><td>"Isso é possível pra mim"</td><td>"Amanhã eu abro uma coisa"</td></tr>
+          <tr><td><strong>5</strong></td><td>A porta</td><td>"É agora"</td><td>Fecha o arco</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">Dia 1 &middot; A cena &middot; seis stories</h3>
+      <div class="ref-b">
+        <div class="beat">
+          <h4>1. O gancho</h4>
+          <p class="vis"><b>Visual:</b> close, cotovelos na mesa, luz de casa. Nada de fundo profissional hoje.</p>
+          <div class="say"><p>"Uma mãe me escreveu essa semana uma frase que eu não consegui tirar da cabeça a noite inteira. Ela falou assim: 'eu não reconheço a mulher que eu viro quando meu filho grita comigo'. Eu vou te contar essa história inteira hoje. Mas antes eu preciso te perguntar uma coisa."</p></div>
+          <p class="interact">Enquete: Você já sentiu isso? &rarr; Já senti / Sinto quase todo dia</p>
+        </div>
+        <div class="beat">
+          <h4>2. A cena</h4>
+          <p class="vis"><b>Visual:</b> outro cômodo, dá sensação de tempo passando.</p>
+          <div class="say"><p>"A cena é sempre parecida. Mercado, farmácia, festa de aniversário, não importa. A criança quer alguma coisa. Você diz não. E o mundo desaba. Grito, corpo no chão, aquele choro que parece que vai rasgar. E você ali, sentindo o olhar de todo mundo nas suas costas. E o pior nem é o olhar dos outros. O pior é o que começa a acontecer dentro de você."</p></div>
+          <p class="interact">Enquete: Já aconteceu em público? &rarr; Já, e foi horrível / Ainda não, mas tenho pavor</p>
+        </div>
+        <div class="beat">
+          <h4>3. O grito que escapou</h4>
+          <p class="vis"><b>Visual:</b> sem sorrir. É o story mais sério da sequência.</p>
+          <div class="say"><p>"Daí acontece. Aquela voz que sobe do fundo. Mais alta do que você queria. Mais dura do que você queria. E o pior de tudo: às vezes ela sai igualzinha à voz da sua mãe. Aquela voz que você jurou pra você mesma que nunca ia usar com um filho seu. E você olha pra aquela criança pequena assustada com você. E ali, naquele segundo, alguma coisa te quebra por dentro."</p></div>
+          <p class="interact">Sem interação. Este story respira sozinho.</p>
+        </div>
+        <div class="beat">
+          <h4>4. As 22h</h4>
+          <p class="vis"><b>Visual:</b> gravado à noite de verdade, luz baixa. O corpo cansado dela é parte da mensagem.</p>
+          <div class="say"><p>"E aí chega a noite. A casa fica em silêncio, a criança dorme, e vem a pior parte do dia. Você lembra do rostinho dele. Lembra do seu grito. E pensa: eu estou estragando o meu filho. E aí você pega o celular e começa a procurar de novo. Mais um post, mais um vídeo, mais um método. Salva. Fecha. E dorme com a mesma pergunta: por que comigo não funciona?"</p></div>
+          <p class="interact">Enquete: Já procurou resposta no celular de madrugada?</p>
+        </div>
+        <div class="beat">
+          <h4>5. A caixinha</h4>
+          <p class="vis"><b>Visual:</b> direto na câmera, mais leve. Alívio depois do peso.</p>
+          <div class="say"><p>"Essa cena não é sinal de que você é uma mãe ruim. É sinal de que você está tentando fazer uma coisa muito difícil sem ninguém ter te ensinado como. Ninguém te preparou pra isso. Nem a sua mãe, nem a escola, nem o pediatra. E eu queria muito ouvir a sua cena. Não pra te julgar. Pra te entender."</p></div>
+          <p class="interact">Caixinha: "Qual é a SUA cena? Me conta, eu leio tudo."</p>
+        </div>
+        <div class="beat">
+          <h4>6. O loop</h4>
+          <div class="say"><p>"Amanhã eu volto pra te explicar uma coisa que quase nenhuma mãe sabe. Por que aquela técnica que você leu, que você achou linda, que você tentou aplicar direitinho, não funcionou na sua casa. E eu já te adianto: não é porque você fez errado."</p></div>
+          <p class="interact">Sticker "Me lembra amanhã"</p>
+        </div>
+        <div class="note" style="margin-bottom:0">
+          <p class="eyebrow">Execução</p>
+          <p>Cada resposta da caixinha precisa de resposta pessoal dela no mesmo dia. Esse público não comenta em público, ele abre o coração no privado. E tudo que chegar ali vira copy verbatim para a próxima rodada e para os anúncios pagos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">Dia 2 &middot; Por que não funcionou &middot; cinco stories</h3>
+      <div class="ref-b">
+        <div class="beat">
+          <h4>1. Retomada</h4>
+          <p class="vis"><b>Visual:</b> prints borrados de duas ou três respostas de ontem.</p>
+          <div class="say"><p>"Bah, eu não esperava a quantidade de mensagem que chegou ontem. E teve uma coisa que se repetiu em quase todas. Muita mãe escreveu assim: 'eu já li tudo, eu sei o que é pra fazer, mas na hora eu travo'. Guria, isso não é falta de informação. E hoje eu vou te mostrar por quê."</p></div>
+        </div>
+        <div class="beat">
+          <h4>2. O cérebro em obra</h4>
+          <div class="say"><p>"A parte do cérebro que segura o impulso, que espera, que pensa antes de reagir, tem um nome: córtex pré-frontal. E ela é a última parte do cérebro a amadurecer. Nos primeiros anos de vida ela está literalmente em obra. Então quando você olha pro seu filho de três anos no meio da birra e pensa 'ele sabe que isso é errado, ele está fazendo por mal', a verdade é outra: naquele momento, ele não tem o equipamento pronto pra fazer diferente."</p></div>
+          <p class="interact">Enquete: Você já achou que ele fazia birra por mal?</p>
+        </div>
+        <div class="beat">
+          <h4>3. Por que a técnica falhou</h4>
+          <p class="vis"><b>Visual:</b> o story-chave do dia.</p>
+          <div class="say"><p>"Você leu a técnica. A técnica é boa. Só que você tentou aplicar ela no meio da tempestade. No pico da birra, o cérebro do seu filho está tomado pela parte emocional. A parte que raciocina fica praticamente fora do ar. Ou seja: você estava falando com uma parte do cérebro dele que naquele instante não estava disponível pra escutar. A técnica não falhou porque você é ruim. Falhou porque foi usada na hora errada. Isso é muito diferente."</p></div>
+          <p class="interact">Enquete: Isso muda alguma coisa pra você?</p>
+        </div>
+        <div class="beat">
+          <h4>4. A parte que quase ninguém conta</h4>
+          <div class="say"><p>"Criança pequena não se acalma sozinha. Ela se acalma junto. O sistema nervoso dela ainda está aprendendo a se regular, e ele aprende com o seu. Isso tem nome: co-regulação. Só que se você chega naquele momento sem dormir, sem apoio, no seu limite, o seu sistema nervoso também não tem o que oferecer. Não é falta de amor. É falta de recurso. E recurso a gente constrói."</p></div>
+          <p class="interact">Controle deslizante: "Eu precisava ouvir isso hoje"</p>
+        </div>
+        <div class="beat">
+          <h4>5. O loop</h4>
+          <div class="say"><p>"Então se não é falta de amor, e não é falta de informação, o que falta? Falta uma coisa só. Tem uma pergunta que eu faço no consultório, há dez anos, que muda completamente o jeito da mãe olhar pro próprio filho. Amanhã eu te entrego essa pergunta."</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">Dia 3 &middot; A virada &middot; cinco stories</h3>
+      <div class="ref-b">
+        <div class="beat">
+          <h4>1. A pergunta</h4>
+          <p class="vis"><b>Visual:</b> bastidor de consultório, a cadeira onde ela atende. É o dia do cenário de autoridade.</p>
+          <div class="say"><p>"Prometi a pergunta, então lá vai. Quando uma mãe chega aqui e me diz 'ele fez birra de novo', eu não pergunto o que ela fez. Eu pergunto: o que estava acontecendo com ele antes? Dormiu bem? Comeu? Era fim de tarde? Tinha muita gente na casa? Passou tempo na tela? Está numa fase nova? Porque o comportamento é a parte que você vê. E ele quase nunca é sobre o que você está vendo."</p></div>
+        </div>
+        <div class="beat">
+          <h4>2. O deslocamento</h4>
+          <p class="vis"><b>Visual:</b> tom firme. É a provocação intelectual dela.</p>
+          <div class="say"><p>"Eu vou te falar uma coisa que talvez te incomode um pouco. Talvez você não precise de mais uma dica. Você já tem dicas demais salvas nesse celular. Cada dia uma estratégia diferente: uma hora acolhe, outra ignora, outra cede, outra grita. Não é excesso de amor nem falta de esforço. É que você está tentando adivinhar. E adivinhar cansa. Cansa mais do que a birra."</p></div>
+          <p class="interact">Enquete: Você sente que vive tentando adivinhar?</p>
+        </div>
+        <div class="beat">
+          <h4>3. O mapa</h4>
+          <p class="vis"><b>Visual:</b> a Mandala impressa na mão. Sem falar o nome do produto ainda.</p>
+          <div class="say"><p>"A virada não é aprender mais uma técnica. A virada é parar de adivinhar e começar a olhar pro seu filho com um mapa. Um mapa que te mostra: isso aqui é fase, isso aqui é cansaço, isso aqui é falta de vínculo, isso aqui é o ambiente, isso aqui pede limite, isso aqui pede colo. Cada comportamento está contando uma história diferente. Quando você aprende a ler a história, você para de errar no escuro."</p></div>
+          <p class="interact">Caixinha: "Qual comportamento do teu filho tu não consegue decifrar?"</p>
+        </div>
+        <div class="beat">
+          <h4>4. O que muda de verdade</h4>
+          <div class="say"><p>"E eu não vou te prometer filho obediente, porque não existe isso e eu não trabalho com isso. A birra vai continuar aparecendo. Criança é criança. O que muda é você. Muda o banho que era gritaria e vira o momento mais gostoso do dia. Muda a birra que você atravessa junto com ele, sem congelar e sem explodir. E muda o que você pensa quando a casa fica em silêncio à noite. Em vez da culpa, vem: eu sei o que eu estou fazendo, e meu filho sente isso."</p></div>
+        </div>
+        <div class="beat">
+          <h4>5. O loop</h4>
+          <div class="say"><p>"Eu passei os últimos dez anos de consultório construindo esse mapa. Não é teoria de internet, é o que eu vejo funcionar dentro das casas. E amanhã eu vou abrir as mensagens que eu recebi de mães que fizeram esse caminho comigo. Te espero."</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">Dia 4 &middot; As mães &middot; seis stories</h3>
+      <div class="ref-b">
+        <p style="color:var(--mute);font-size:.92rem">Hoje ela fala pouco. Quem fala são as mães. Menos Bel, mais elas. Ainda sem link de venda.</p>
+        <div class="beat">
+          <h4>1. A abertura</h4>
+          <p class="vis"><b>Visual:</b> mais leve, sorrindo. Contraste proposital com o dia 1.</p>
+          <div class="say"><p>"Hoje eu vou falar pouco. Porque quem tem que falar hoje não sou eu. São as mães que estavam exatamente onde você está agora, e que me deixaram mostrar o que aconteceu depois."</p></div>
+        </div>
+        <div class="beat">
+          <h4>2. Solange, mãe do Benjamim</h4>
+          <p class="vis"><b>Visual:</b> print do depoimento, texto grande.</p>
+          <div class="say"><p>"Olha a palavra que ela usou: confiante. Não perfeita. Confiante. É disso que eu estou falando."</p></div>
+        </div>
+        <div class="beat">
+          <h4>3. Gabrieli, mãe do Gael</h4>
+          <div class="say"><p>"Repara que ela fala 'mais paciência da minha parte'. A criança não virou outra criança. A mãe ganhou recurso. É sempre por aí que começa."</p></div>
+        </div>
+        <div class="beat">
+          <h4>4. Alessandra Wolanin, mãe do Gael</h4>
+          <div class="say"><p>"No tempo certo. Não em sete dias. No tempo certo. Eu não trabalho com milagre, eu trabalho com direção."</p></div>
+        </div>
+        <div class="beat">
+          <h4>5. A honestidade</h4>
+          <p class="vis"><b>Visual:</b> este story é o que separa ela de todo mundo do nicho.</p>
+          <div class="say"><p>"Agora eu vou fazer uma coisa que ninguém faz. Nenhuma dessas mães é promessa de que vai ser igual na tua casa. Cada família tem o seu ritmo. E vai ter dia ruim. Vai ter dia que você vai gritar de novo. Porque você é humana, e porque isso faz parte. Eu não construí um método que ignora isso. Eu construí um método que já conta com isso desde o começo."</p></div>
+        </div>
+        <div class="beat">
+          <h4>6. O loop final</h4>
+          <div class="say"><p>"Todas essas mães passaram pelo mesmo caminho, que tem nome, tem estrutura e tem ordem. Amanhã eu vou abrir ele pra você. Vou te contar o que tem dentro, quanto custa e pra quem ele não serve."</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">Dia 5 &middot; A porta &middot; seis stories, com link</h3>
+      <div class="ref-b">
+        <div class="beat">
+          <h4>1. A abertura</h4>
+          <div class="say"><p>"Nesses últimos dias eu te contei uma cena. O mercado, o grito, a culpa das dez da noite. Aí eu te expliquei por que aquela técnica não funcionou. Depois eu te dei a pergunta que muda o olhar. E ontem eu te mostrei as mães. Hoje eu vou te entregar o caminho inteiro."</p></div>
+        </div>
+        <div class="beat">
+          <h4>2. O que é a Turma Acompanhada</h4>
+          <p class="vis"><b>Visual:</b> card com os cinco pilares na tela.</p>
+          <div class="say"><p>"O Código é o método que eu construí em dez anos de consultório. Cinco pilares, aulas curtas, e a Mandala que é o mapa visual, pra você colar na geladeira. E dessa vez tem uma coisa nova: eu vou junto. São três encontros ao vivo comigo, com data marcada, pra você não ficar sozinha na hora de aplicar."</p></div>
+          <p class="interact">Sticker de link</p>
+        </div>
+        <div class="beat">
+          <h4>3. Pra quem não serve</h4>
+          <p class="vis"><b>Visual:</b> séria. Este story vende mais do que qualquer outro.</p>
+          <div class="say"><p>"Agora presta atenção, porque eu prefiro que você não entre a que você entre errada. O Código não é pra quem quer uma técnica pro filho obedecer sem que nada mude nela. Ele começa mudando o seu olhar, e o comportamento muda como consequência. E se o teu filho tem sinais importantes de atraso, o Código constrói a base dentro de casa, mas ele não substitui avaliação profissional. Isso eu não vou vender pra ti."</p></div>
+        </div>
+        <div class="beat">
+          <h4>4. O valor</h4>
+          <div class="say"><p>"Um ciclo de acompanhamento no consultório são doze sessões. Dá três mil reais, e atende uma família por vez. A Turma Acompanhada sai por seiscentos e noventa e sete, ou em doze vezes no cartão. E eu não quero que tu decida agora se ele funciona. Eu quero que tu decida se merece um mês pra testar."</p></div>
+          <p class="interact">Sticker de link</p>
+        </div>
+        <div class="beat">
+          <h4>5. A garantia</h4>
+          <div class="say"><p>"Você entra hoje, assiste, aplica. Se em até trinta dias você sentir que não é pra ti, por qualquer motivo, pede o reembolso direto na Hotmart e recebe cem por cento de volta. Sem pergunta, sem constrangimento, sem precisar falar comigo. O risco é meu, não é teu."</p></div>
+        </div>
+        <div class="beat">
+          <h4>6. O fechamento</h4>
+          <div class="say"><p>"Teu filho não veio com manual. Mas tu pode aprender a ler os sinais que ele te dá todo santo dia. O link está aí em cima e no meu perfil. E se tu tiver qualquer dúvida, me chama na DM, quem responde sou eu."</p></div>
+          <p class="interact">Sticker de link + caixinha de dúvidas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="note" style="max-width:70ch">
+      <p class="eyebrow">Produção</p>
+      <p>Dá para gravar os 28 stories em duas sessões, mas o <strong>figurino tem que mudar por dia</strong>. Se ela aparecer com a mesma blusa nos cinco dias, a mãe percebe que é campanha gravada e o arco perde a naturalidade.</p>
+      <p style="margin-bottom:0">Horários: dia 1 à noite (a culpa das 22h bate mais forte à noite), dias 2 e 3 pela manhã, dia 4 no fim da tarde, dia 5 de manhã cedo com repique do link à noite.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============== FEED =============== -->
+<section id="feed">
+  <div class="wrap">
+    <div class="sec-head col">
+      <p class="eyebrow">05 &middot; Os posts de feed</p>
+      <h2>Cinco carrosséis, um por dia do arco</h2>
+      <p class="lede">Os dias 1 e 3 geram alcance e salvamento. Os dias 2 e 4 puxam DM com palavra-chave no comentário, reforçando a captação que já corre pelos stories desde o dia 1. O dia 5 converte quem já está na conversa.</p>
+    </div>
+
+    <div class="grid g2">
+      <div class="card">
+        <p class="eyebrow">Dia 1 &middot; 9 cards</p>
+        <h3 style="margin-bottom:.5rem">"São 18h40 e você já gritou hoje"</h3>
+        <p style="font-size:.93rem;color:var(--mute)">Abre na cena, fecha em "isso não é falta de amor. É que ninguém te explicou o que acontece dentro do cérebro do seu filho naquela hora".</p>
+        <p style="font-size:.88rem;margin-bottom:0"><strong>CTA:</strong> comentar qual é o horário mais difícil da rotina.</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Dia 2 &middot; 10 cards</p>
+        <h3 style="margin-bottom:.5rem">"Por que 'conta até 10' não funciona com uma criança de 3 anos"</h3>
+        <p style="font-size:.93rem;color:var(--mute)">O córtex pré-frontal, o alarme, a co-regulação. Card final desarma a objeção: "isso não é passar a mão na cabeça. Primeiro acalma, depois ensina."</p>
+        <p style="font-size:.88rem;margin-bottom:0"><strong>CTA:</strong> comentar CÉREBRO para receber o resumo na DM. Aqui começa a captação.</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Dia 3 &middot; 9 cards</p>
+        <h3 style="margin-bottom:.5rem">"A pergunta que muda tudo não é 'como faço ele parar'"</h3>
+        <p style="font-size:.93rem;color:var(--mute)">Comportamento é comunicação. O que fazer, na ordem. Fecha em "a culpa nunca ensinou nenhuma mãe a fazer melhor. Informação, sim."</p>
+        <p style="font-size:.88rem;margin-bottom:0"><strong>CTA:</strong> salvar e compartilhar com outra mãe.</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Dia 4 &middot; 8 cards</p>
+        <h3 style="margin-bottom:.5rem">"Três casas que mudaram sem que a criança virasse outra criança"</h3>
+        <p style="font-size:.93rem;color:var(--mute)">O card 7 é o que sustenta tudo: "nenhuma criança virou obediente, nenhuma mãe virou santa. O que mudou foi a leitura."</p>
+        <p style="font-size:.88rem;margin-bottom:0"><strong>CTA:</strong> comentar EU QUERO para ser avisada na abertura.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:1.1rem;border-left:3px solid var(--accent)">
+      <p class="eyebrow">Dia 5 &middot; 10 cards &middot; a abertura</p>
+      <h3 style="margin-bottom:.5rem">"Está aberto"</h3>
+      <p style="font-size:.93rem;color:var(--mute)">O que ela aprende, como funciona, o investimento, a garantia. E o card 9, que é o mais importante da peça inteira:</p>
+      <p class="voice" style="margin-bottom:.6rem">"Eu não vou inventar contagem regressiva pra você. Se hoje não é o momento, tudo bem de verdade. Mas se você já sentiu que precisa entender o que está acontecendo aí dentro de casa, o caminho está pronto."</p>
+      <p style="font-size:.88rem;margin-bottom:0"><strong>CTA:</strong> link na bio, DM aberta. Sustentar com três blocos de stories no dia.</p>
+    </div>
+
+    <div class="note alert" style="max-width:70ch">
+      <p class="eyebrow">Preencher antes de publicar</p>
+      <p>As três histórias do post do dia 4 são casos de consultório e precisam ir com nome trocado. Os depoimentos dos stories são outra coisa: são as mães que já autorizaram, e vão com o nome real delas. E os detalhes do curso no dia 5 (carga horária, prazo de acesso, parcelamento exato) precisam bater com o que está na página e no checkout.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============== LIVE =============== -->
+<section id="live">
+  <div class="wrap">
+    <div class="sec-head col">
+      <p class="eyebrow">06 &middot; A live</p>
+      <h2>Cerca de setenta minutos, e a venda no minuto 49</h2>
+      <p class="lede">Três decisões de estrutura fazem a Bel vender sem virar outra pessoa: ela avisa no minuto 5 que vai vender, o conteúdo é bom de verdade, e o melhor conteúdo prático vem depois do pitch.</p>
+    </div>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Tempo</th><th>Bloco</th><th>Objetivo</th></tr></thead>
+        <tbody>
+          <tr><td class="num">00 a 05</td><td>Aquecimento e chegada</td><td>Encher a sala, baixar a guarda</td></tr>
+          <tr><td class="num">05 a 10</td><td><strong>Contrato da live e aviso de venda</strong></td><td>Comprar reciprocidade e eliminar a sensação de emboscada</td></tr>
+          <tr><td class="num">10 a 12</td><td>Micro história de consultório</td><td>Identificação antes de autoridade</td></tr>
+          <tr><td class="num">12 a 23</td><td>O cérebro em obra</td><td>Tirar a intenção do comportamento</td></tr>
+          <tr><td class="num">23 a 33</td><td>O alarme</td><td>"Ele não me desobedece, ele não me processa"</td></tr>
+          <tr><td class="num">33 a 41</td><td>O termostato e a herança</td><td>Conectar neurociência com o medo mais profundo</td></tr>
+          <tr><td class="num">41 a 46</td><td>Os 4 movimentos</td><td>Entregar algo aplicável hoje à noite</td></tr>
+          <tr><td class="num">46 a 49</td><td><strong>Transição</strong></td><td>Sair do conteúdo sem quebrar o clima</td></tr>
+          <tr><td class="num">49 a 60</td><td>Pitch</td><td>Apresentar, empilhar valor, preço, CTA</td></tr>
+          <tr><td class="num">60 a 68</td><td>Objeções e mais conteúdo</td><td>Derrubar travas e continuar entregando</td></tr>
+          <tr><td class="num">68 a 72</td><td>Fechamento</td><td>Saída digna, último CTA</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">O contrato da live, o bloco que tira o peso da venda</h3>
+      <div class="ref-b">
+        <div class="say"><p>"Deixa eu combinar uma coisa com vocês antes de começar, porque eu não gosto de fazer nada escondido.</p>
+        <p>Nos primeiros 45 minutos eu vou ensinar. De verdade. E no final, uns dez minutos, eu vou falar de um trabalho meu. Vou falar do preço, vou falar como funciona, vou responder as perguntas.</p>
+        <p>Tô te falando isso agora por dois motivos. Primeiro, porque eu odeio quando eu tô assistindo uma coisa boa e do nada a pessoa vira vendedora e eu me sinto enganada. Não vou fazer isso com você.</p>
+        <p>Segundo, e presta atenção nisso: é justamente porque eu vou vender no final que essa aula vai ser boa. Se eu te entregar uma aula meia boca, você não vai querer nada meu. Então o meu interesse aqui é que você saia dessa live com a ficha caindo, tendo comprado ou não. Combinado?"</p></div>
+        <p style="font-size:.92rem;color:var(--mute);margin-bottom:0">Quem avisa antes não precisa dar o bote depois. Este bloco elimina o desconforto dela e a defesa do público de uma vez só.</p>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">A transição, o ponto mais delicado do roteiro</h3>
+      <div class="ref-b">
+        <p style="font-size:.93rem">Quatro tempos, nesta ordem. Ela fala devagar, olhando na câmera. <strong>O erro clássico é a voz mudar.</strong> A voz não muda: ela continua sendo a mesma pessoa que estava ensinando trinta segundos atrás.</p>
+        <div class="beat">
+          <h4>1. Fechar o assunto, não mudar de assunto</h4>
+          <div class="say"><p>"Olha o que aconteceu nessa última hora. Você entrou aqui achando que o seu filho fazia birra pra te testar, e tá saindo sabendo que o cérebro dele ainda tá em obra. Entrou achando que ele te ignorava, e tá saindo sabendo que na hora da crise ele não te processa. Entrou achando que o problema era a sua paciência, e tá saindo sabendo que é o seu sistema nervoso, e que ele foi ensinado, e que pode ser reaprendido. Isso não é pouco. Isso é uma virada."</p></div>
+        </div>
+        <div class="beat">
+          <h4>2. Pedir permissão</h4>
+          <div class="say"><p>"Eu combinei com você no começo que ia falar do meu trabalho no final. Chegou a hora. Eu queria te pedir uns dez minutinhos. Se puder me dar esses dez minutos, digita 'pode' aí."</p></div>
+          <p class="interact">Ela espera e lê alguns "pode" em voz alta. A partir daqui é a plateia que autorizou.</p>
+        </div>
+        <div class="beat">
+          <h4>3. Dar saída digna</h4>
+          <div class="say"><p>"E se você já sabe que não é o seu momento, fica tranquila. Fica aqui do mesmo jeito, porque depois eu ainda tenho conteúdo pra vocês. Eu não vou embora depois de vender, isso não é o meu jeito."</p></div>
+        </div>
+        <div class="beat">
+          <h4>4. A ponte pessoal</h4>
+          <div class="say"><p>"Eu atendo há dez anos. E chegou um ponto em que eu comecei a ver um padrão que me incomodava. As mães chegavam no consultório muito tarde. E as que chegavam cedo, muitas vezes não conseguiam continuar, porque terapia é semanal e é cara. Aí eu comecei a me perguntar: como é que eu pego o que eu faço aqui e coloco na mão de uma mãe que só tem meia hora por dia depois que a casa dorme?"</p></div>
+        </div>
+        <div class="note" style="margin-bottom:0">
+          <p class="eyebrow">Frase de emergência</p>
+          <p>Se o desconforto bater no meio da transição, e se ela se sentir à vontade com a frase, usa uma vez só: <span class="voice">"vou te confessar: essa é a parte que eu menos gosto de fazer. Eu sou muito melhor ensinando do que vendendo. Mas eu vou fazer do meu jeito, que é te contando exatamente o que é, e você decide."</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">Quando ninguém comentar, e por que isso é normal</h3>
+      <div class="ref-b">
+        <p style="font-size:.93rem">Numa base pequena e quente, a maior parte da venda acontece <strong>nas 24 horas seguintes</strong>, não ao vivo. Vale combinar isso antes de a live começar, para que o silêncio do chat não pese mais do que deveria.</p>
+        <ul class="plain" style="font-size:.93rem">
+          <li>Não interpretar o silêncio em voz alta. Seguir.</li>
+          <li>Continuar entregando conteúdo depois do pitch. Preenche o silêncio naturalmente e é o que mais vende.</li>
+          <li>Puxar micro compromisso no lugar da venda: <span class="voice">"não precisa comprar agora. Só me responde: qual é a maior dúvida que ficou na sua cabeça?"</span></li>
+          <li>Falar do silêncio com naturalidade: <span class="voice">"eu sei que tem gente aí em silêncio, com o celular na mão, lendo. E tá tudo bem, eu sou dessas também."</span></li>
+        </ul>
+        <div class="note alert" style="margin-bottom:0">
+          <p class="eyebrow">Nunca</p>
+          <p>"Cadê vocês", "ninguém vai comprar", "tô esperando". Destrói a autoridade em três segundos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">Os 60 minutos depois da live, onde a venda acontece</h3>
+      <div class="ref-b">
+        <div class="beat">
+          <h4>0 a 15 min &middot; Responder os "EU QUERO"</h4>
+          <p style="font-size:.93rem">Prioridade máxima, antes de qualquer outra coisa. Uma por uma, com o nome da pessoa, nunca copiado igual para todas. E sempre terminando com uma pergunta: "me conta, seu filho tem quantos anos?" Sem ela, é só um link.</p>
+        </div>
+        <div class="beat">
+          <h4>15 a 30 min &middot; Cinco stories</h4>
+          <p style="font-size:.93rem">Print da live acabando. Um comentário forte do público. Vídeo de 15 segundos com o resumo, sem edição, ainda com a cara de quem acabou de fazer. O card da oferta com link. E a caixinha de dúvidas, que é a arma mais eficiente da noite: transforma dúvida silenciosa em conversa.</p>
+        </div>
+        <div class="beat">
+          <h4>30 a 45 min &middot; Post para quem não assistiu</h4>
+          <p style="font-size:.93rem">E o corte de 2 minutos do bloco do alarme como reels. É o pedaço mais compartilhável da live inteira e continua vendendo por dias.</p>
+        </div>
+        <div class="beat" style="margin-bottom:0">
+          <h4>45 a 60 min &middot; A lista de quentes</h4>
+          <p style="font-size:.93rem;margin-bottom:0">Quem comentou e ainda não foi respondida, quem perguntou preço, quem falou da idade do filho, e quem comprou (para a mensagem de boas-vindas no mesmo dia, sempre).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="note" style="max-width:70ch">
+      <p class="eyebrow">O post-it atrás do celular</p>
+      <p class="voice" style="margin-bottom:0">"Eu não tô vendendo. Eu tô contando pra uma mãe cansada que existe uma saída, e eu sei o caminho. Se ela souber e não comprar, tudo bem. Se ela não souber porque eu tive vergonha de falar, aí sim eu errei."</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============== DM =============== -->
+<section id="dm">
+  <div class="wrap">
+    <div class="sec-head col">
+      <p class="eyebrow">07 &middot; As DMs</p>
+      <h2>Onde a venda realmente acontece</h2>
+      <p class="lede">Essa mãe não chega na DM com uma dúvida sobre um curso. Ela chega com uma confissão. O que não funciona aqui é responder com um pitch. E responder com pena funciona menos ainda.</p>
+    </div>
+
+    <div class="col">
+      <p>O que constrói a venda é uma frase que a mãe pensa por volta da terceira mensagem: <strong>"nossa, ela entendeu"</strong>. Depois disso tudo é fácil. Antes disso nada funciona. Por isso a regra estrutural: a Bel só oferece depois que a mãe confirmar, com as palavras dela, que se sentiu entendida.</p>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">As três aberturas, conforme o gatilho</h3>
+      <div class="ref-b">
+        <p style="font-size:.92rem;color:var(--mute)">Nenhuma contém preço, link ou a palavra "curso". Cada uma contém um rótulo e uma pergunta de resposta fácil.</p>
+        <div class="beat">
+          <h4>Ela respondeu uma enquete</h4>
+          <div class="say"><p>"Oi, [nome]. Vi sua resposta ali na enquete. Vou ser honesta: a maior parte das respostas de enquete vira mensagem automática de venda. Essa aqui não é. Pela sua resposta, parece que aí em casa a birra já deixou de ser um momento pontual e virou uma coisa que ocupa espaço no dia de vocês. Me conta: como costuma ser o momento mais difícil do dia aí?"</p></div>
+          <p style="font-size:.88rem;color:var(--mute);margin:0">Dizer em voz alta a suspeita que a mãe tem no momento em que vê a notificação é o que desarma a suspeita.</p>
+        </div>
+        <div class="beat">
+          <h4>Ela mandou um relato longo</h4>
+          <p class="vis"><b>Erro fatal aqui:</b> responder com pergunta. Quem acabou de se abrir precisa ser recebida antes de ser interrogada. Manda em três bolhas, com pausa.</p>
+          <div class="say"><p>"Oi, [nome]. Li tudo. Duas vezes, com calma. Antes de qualquer coisa: obrigada por confiar isso aqui comigo. Sei o que custa escrever."</p>
+          <p>"Teve uma coisa sua que ficou na minha cabeça: '[3 a 6 palavras exatas dela]'. Parece que o mais pesado nem é a birra em si. É a sensação de estar falhando com ele todo dia."</p>
+          <p>"Se eu estiver errada em alguma coisa, me corrige."</p></div>
+          <p style="font-size:.88rem;color:var(--mute);margin:0">"Me corrige se eu estiver errada" é a frase mais poderosa do kit: convida a mãe a responder "não, é exatamente isso". É aí que a conversa vira.</p>
+        </div>
+        <div class="beat" style="margin-bottom:0">
+          <h4>Ela só reagiu com emoji</h4>
+          <div class="say"><p>"Oi, [nome]. Vi sua reação ali no story. Aquele conteúdo costuma mexer mais com quem está vivendo isso de perto do que com quem só está passando o dedo. Seria estranho se eu te perguntasse como estão as coisas aí em casa?"</p></div>
+          <p style="font-size:.88rem;color:var(--mute);margin:0">Pergunta orientada ao "não". Quem acabou de dizer "não, imagina" se sente no controle e continua escrevendo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">As sete perguntas de diagnóstico</h3>
+      <div class="ref-b">
+        <p style="font-size:.92rem;color:var(--mute)">Uma pergunta por mensagem, nunca duas. Sempre "o que" ou "como", nunca "por que": essa mãe já se julga o suficiente.</p>
+        <ol style="padding-left:1.2rem;font-size:.94rem">
+          <li style="margin-bottom:.7em"><strong>"Me conta a idade dele e como é o momento mais difícil do dia de vocês."</strong><br><span style="color:var(--mute)">Qualifica a faixa, revela o horário-gatilho e dá o vocabulário real dela.</span></li>
+          <li style="margin-bottom:.7em"><strong>"O que você já tentou que funcionou por um tempo e depois parou de funcionar?"</strong><br><span style="color:var(--mute)">Impede a Bel de sugerir algo que a mãe já cansou de tentar. E já valida: pressupõe que ela tentou.</span></li>
+          <li style="margin-bottom:.7em"><strong>"E como você fica depois que passa?"</strong><br><span style="color:var(--mute)">A mais importante das sete. Todas as outras são sobre a criança; essa é sobre ela. Quase nenhuma mãe já ouviu essa pergunta, e a resposta vira o argumento da oferta.</span></li>
+          <li style="margin-bottom:.7em"><strong>"O que você já procurou de ajuda até aqui?"</strong><br><span style="color:var(--mute)">Se ela disser "já comprei curso e não terminei", a objeção chegou de graça antes da oferta. Objeção antecipada é objeção morta.</span></li>
+          <li style="margin-bottom:.7em"><strong>"Quando você imagina ele com dez, doze anos, o que mais te assusta?"</strong><br><span style="color:var(--mute)">O medo real, que quase nunca é a birra. É o núcleo emocional da decisão.</span></li>
+          <li style="margin-bottom:.7em"><strong>"O que precisaria mudar aí em casa pra você sentir que tem chão de novo?"</strong><br><span style="color:var(--mute)">O critério de sucesso nas palavras dela. É o argumento da oferta, escrito pela própria cliente.</span></li>
+          <li style="margin-bottom:0"><strong>"E se nada mudar nos próximos seis meses, como fica?"</strong><br><span style="color:var(--mute)">Só se a conversa estiver quente. Quem diz isso é a mãe, nunca a Bel. A pergunta abre espaço; ela chega sozinha à conclusão.</span></li>
+        </ol>
+        <div class="note" style="margin-bottom:0">
+          <p class="eyebrow">O sinal verde</p>
+          <p>A Bel para de diagnosticar quando a mãe escreve alguma variação de <strong>"é exatamente isso"</strong> ou "parece que você tá dentro da minha casa". Não é "você tem razão", que é despedida educada. A diferença entre os dois é a diferença entre uma conversa que vende e uma que morre.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">As seis objeções, com resposta pronta</h3>
+      <div class="ref-b">
+        <p style="font-size:.92rem;color:var(--mute)">Arquitetura comum: espelhar, validar, dizer em voz alta a suspeita dela, e devolver uma pergunta. A Bel nunca argumenta contra. Ela reformula a pergunta.</p>
+
+        <div class="beat">
+          <h4>"É caro" / "R$ 697 tá fora do meu orçamento"</h4>
+          <div class="say"><p>"Fora do orçamento agora. Eu entendo, e não vou tentar te convencer de que 697 é pouco dinheiro. Pra muita mãe não é, e eu sei disso. Você provavelmente já ouviu alguém dizer que 'é um investimento no seu filho'. Eu não vou usar essa frase com você, porque ela na prática significa 'se você não comprar, você não ama o suficiente'. E isso é mentira. Me ajuda a entender uma coisa só: é o valor total que não cabe, ou é a forma como ele entraria no mês?"</p></div>
+          <p style="font-size:.9rem"><strong>Se for a forma:</strong> PIX à vista, dois cartões, ou 12x. Boa parte dessa objeção é limite de cartão, não falta de dinheiro.</p>
+          <p style="font-size:.9rem;margin-bottom:0"><strong>Se for o valor mesmo:</strong> <span class="voice">"então tá tudo bem, de verdade. Não entra apertando o que não pode ser apertado. Casa apertada não é lugar de aprender a regular emoção, nem a sua nem a dele."</span> E manda conteúdo gratuito. Essa mãe vai contar essa conversa para outras mães.</p>
+        </div>
+
+        <div class="beat">
+          <h4>"Preciso falar com meu marido"</h4>
+          <div class="say"><p>"Claro. É uma decisão de casa, faz todo sentido. Me diz uma coisa: o que você acha que ele vai querer saber primeiro?"</p></div>
+          <p style="font-size:.9rem;margin-bottom:0">Essa pergunta é o diagnóstico inteiro. Se ela responde "o preço", é objeção de dinheiro fantasiada. Se responde "ele acha que é frescura", é legitimidade. Se responde "sei lá", o marido provavelmente é uma forma educada de dizer não, e não se deve empurrar. Nos dois primeiros casos, oferecer escrever a mensagem pronta para ela encaminhar.</p>
+        </div>
+
+        <div class="beat">
+          <h4>"Não vou ter tempo de assistir"</h4>
+          <div class="say"><p>"Parece que a sua agenda já está estourada e a ideia de encaixar mais uma obrigação cansa só de pensar. E sendo bem direta: você provavelmente já comprou alguma coisa que virou só mais um item na lista de culpa. Então antes de eu te falar do formato, me responde: como são os vinte minutos mais livres do seu dia?"</p></div>
+          <p style="font-size:.9rem;margin-bottom:0">A resposta costuma ser: dobrando roupa, no trajeto, depois que ele dorme. A Bel devolve exatamente isso e apresenta o Caminho Mínimo.</p>
+        </div>
+
+        <div class="beat">
+          <h4>"Já comprei curso e não terminei"</h4>
+          <p class="vis">Não é objeção sobre o produto. É <b>autoacusação</b>. Responder com argumento de produto perde a mãe.</p>
+          <div class="say"><p>"Parece que essa não é bem uma dúvida sobre o meu curso. É um medo de se decepcionar com você mesma de novo. E eu vou te dizer uma coisa que talvez ninguém tenha te dito: na maioria das vezes que uma mãe não termina um curso, o problema não é disciplina dela. É que o curso foi desenhado pra alguém com tempo e silêncio. E você não tem nenhum dos dois. Me conta: o que te fez parar no outro?"</p></div>
+          <p style="font-size:.9rem;margin-bottom:0"><strong>Proibido:</strong> "dessa vez é diferente porque você vai se comprometer". Joga a responsabilidade do fracasso passado nela outra vez.</p>
+        </div>
+
+        <div class="beat">
+          <h4>"Meu filho é muito difícil, será que funciona?"</h4>
+          <div class="say"><p>"Parece que você já teve esperança antes, ela não se sustentou, e agora tem uma parte de você que prefere nem criar expectativa pra não levar outro tombo. Vou te responder com honestidade, e a honestidade inclui isso: não funciona pra todo mundo. Tem situação que não é caso de curso, é caso de avaliação, e se for o seu eu vou te falar isso na cara, mesmo perdendo a venda. Então me descreve uma crise dele do começo ao fim."</p></div>
+          <p style="font-size:.9rem;margin-bottom:0">A Bel lê com olho clínico. Se houver sinais de alerta, não vende. Se for esperado para a faixa, segue, e é aqui que o Mapa do Meu Filho fecha a venda sozinho.</p>
+        </div>
+
+        <div class="beat" style="margin-bottom:0">
+          <h4>"Vou pensar"</h4>
+          <p class="vis">Quase sempre é um "não" com medo de ser dito. O trabalho é <b>tornar o não seguro</b>: um não dito é conversa, um não engolido é bloqueio.</p>
+          <div class="say"><p>"Claro, pensa sim. Decisão de casa não se toma na pressa da DM. Só me ajuda com uma coisa: o que exatamente ficou em aberto na sua cabeça? Porque se for preço, a gente conversa. Se for confiança em mim, a gente conversa. E se for simplesmente 'não é agora', também está tudo certo, e eu prefiro mil vezes que você me diga isso do que sumir achando que eu vou ficar chateada. Você pode me dizer não. Não muda nada entre a gente."</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">O follow-up: quatro toques e um encerramento</h3>
+      <div class="ref-b">
+        <p style="font-size:.92rem;color:var(--mute)">Cada toque tem que ter valor próprio. Se a mensagem só existe para perguntar se ela decidiu, é cobrança e queima a relação.</p>
+        <ul class="plain" style="font-size:.94rem">
+          <li><strong>24 horas &middot; entrega, zero venda.</strong> Áudio curto respondendo algo específico do diagnóstico dela, com uma orientação aplicável em 30 segundos. Sem link, sem menção ao curso.</li>
+          <li><strong>3 dias &middot; retomada leve.</strong> "Você chegou a testar aquilo? E sobre o Código: seria uma má ideia eu tirar alguma dúvida que ficou?"</li>
+          <li><strong>7 dias &middot; prova social específica.</strong> Um caso parecido com o dela, sem nome, sem link. "Não estou te mandando isso pra te apressar."</li>
+          <li><strong>10 a 14 dias &middot; a pergunta que desperta.</strong> Uma linha só: <span class="voice">"você desistiu de resolver isso por enquanto?"</span> Produz resposta muito acima de qualquer "e aí, pensou?", porque a mãe sente vontade imediata de dizer "não, é que eu tô enrolada, mas eu quero".</li>
+        </ul>
+        <p style="font-size:.94rem;margin-bottom:0"><strong>Encerramento, se não houver resposta:</strong> <span class="voice">"vou parar de te chamar pra não virar peso na sua caixa de entrada. Só quero que você saiba de duas coisas: nada do que você me contou saiu daqui, e a porta fica aberta."</span></p>
+      </div>
+    </div>
+
+    <div class="ref">
+      <h3 class="ref-h">Quando NÃO vender: a seção que protege a Bel</h3>
+      <div class="ref-b">
+        <p style="font-size:.93rem">Toda vez que a Bel recusa uma venda que não deveria acontecer, ela ganha reputação intacta, uma mãe que a indica por anos, e sono tranquilo. Vale mais que R$ 697.</p>
+        <ul class="plain" style="font-size:.94rem">
+          <li><strong>Sinais de alerta no desenvolvimento.</strong> Perda de habilidades já adquiridas, regressão de fala, ausência de contato visual, autoagressão. Encaminha para avaliação, não vende.</li>
+          <li><strong>Mãe em sofrimento psíquico agudo.</strong> "Não aguento mais", "penso em sumir", sinais de depressão. Não vender em nenhuma circunstância: nada do que o Código ensina funciona num sistema nervoso em colapso, e a compra sem resultado vira mais uma prova de fracasso para ela. CVV no 188, gratuito e 24 horas.</li>
+          <li><strong>Violência doméstica ou risco à criança.</strong> Central de Atendimento à Mulher no 180, Direitos Humanos no 100.</li>
+          <li><strong>O dinheiro faz falta no essencial.</strong> "Não compra. Isso não vai embora, o Código continua existindo mês que vem."</li>
+          <li><strong>Ela espera que o curso conserte a criança sem ela participar.</strong> Alinhar antes: quem faz o trabalho é ela; o filho muda como consequência. Se não for isso que ela procura, encerrar com elegância.</li>
+          <li><strong>Criança fora da faixa de 0 a 6.</strong> Ser transparente. Prefere dizer agora a que ela descubra depois de pagar.</li>
+          <li style="margin-bottom:0"><strong>Ela escreve às 2h da manhã em crise.</strong> Acolher, orientar para agora, e adiar a conversa: "hoje é dia de vocês dois dormirem". Vender no pico do desespero produz o arrependimento da manhã seguinte e o reembolso.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note alert" style="max-width:70ch">
+      <p class="eyebrow">As frases proibidas, em qualquer versão</p>
+      <p>"Se você realmente quisesse mudar, daria um jeito" &middot; "Seu filho merece uma mãe que..." &middot; "Quanto custa continuar do jeito que está?" &middot; "É por ele, não por você" &middot; "Só quem se importa de verdade investe" &middot; "Ele vai crescer e você não vai poder voltar atrás".</p>
+      <p style="margin-bottom:0">Todas vendem alguma coisa hoje, e todas fazem exatamente o que o Código promete desfazer. <strong>Usar a culpa como alavanca de venda em um produto que existe para curar a culpa não é só antiético, é incoerente, e a mãe sente a incoerência.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- =============== PAPEIS =============== -->
+<section id="papeis">
+  <div class="wrap">
+    <div class="sec-head col">
+      <p class="eyebrow">08 &middot; Quem faz o quê</p>
+      <h2>Três pessoas, sem sobreposição</h2>
+    </div>
+
+    <div class="grid g3">
+      <div class="card">
+        <p class="chip c-bel">Bel</p>
+        <h3 style="margin:.7rem 0 .6rem">Grava, aparece e conversa</h3>
+        <ul class="plain" style="font-size:.93rem;margin-bottom:0">
+          <li>Os dois blocos de gravação antes do dia 1</li>
+          <li>Stories diários durante a janela</li>
+          <li>A live do dia 7</li>
+          <li>Toda conversa de DM que virar caso quente</li>
+          <li>Os três encontros ao vivo depois</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="chip c-fran">Fran</p>
+        <h3 style="margin:.7rem 0 .6rem">Publica e faz triagem</h3>
+        <ul class="plain" style="font-size:.93rem;margin-bottom:0">
+          <li>Agenda e publica reels, carrosséis e stories</li>
+          <li>Responde comentários e faz a primeira triagem da DM</li>
+          <li>Aciona as cinco depoentes no dia 4</li>
+          <li>Lembretes da live na lista</li>
+          <li>Passa os casos quentes para a Bel</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="chip c-fab">Fabricio</p>
+        <h3 style="margin:.7rem 0 .6rem">Estrutura e mede</h3>
+        <ul class="plain" style="font-size:.93rem;margin-bottom:0">
+          <li>Roteiros, copy e este playbook</li>
+          <li>Ajustes na página: garantia, preço, PIX</li>
+          <li>Teste de checkout e de link</li>
+          <li>Acompanhamento das métricas em cada etapa</li>
+          <li>Apuração e leitura do resultado no dia 11</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note" style="max-width:70ch">
+      <p class="eyebrow">A regra que protege a operação</p>
+      <p style="margin-bottom:0">Durante a janela, a Bel faz três coisas apenas: <strong>stories, DM e a live</strong>. Se ela precisar improvisar conteúdo no meio, a operação trava e a energia dela vai para o lugar errado. Tudo o mais já foi gravado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============== ANTES =============== -->
+<section id="antes">
+  <div class="wrap">
+    <div class="sec-head col">
+      <p class="eyebrow">09 &middot; Antes de abrir</p>
+      <h2>O que precisa estar resolvido</h2>
+      <p class="lede">Os itens marcados em cheio são bloqueios: sem eles, a ação não pode começar.</p>
+    </div>
+
+    <div class="col">
+      <ul class="check">
+        <li class="block"><span><strong>Trocar o Linktree</strong> para mariaizabeldarosa.com.br/codigo. Numa ação orgânica, o Linktree é o caminho principal de venda. Deixa de ser opcional.</span></li>
+        <li class="block"><span><strong>Definir data e plataforma dos três encontros ao vivo.</strong> Sem isso, o item mais valioso do stack não pode ser anunciado.</span></li>
+        <li class="block"><span><strong>Decidir sobre a VSL.</strong> A página ainda carrega o vídeo antigo, em que a Bel se apresenta como psicopedagoga. Ou a edição nova entra antes do dia 5, ou o link do story aponta para a âncora da oferta, pulando o vídeo.</span></li>
+        <li class="block"><span><strong>Configurar 30 dias de garantia</strong> na Hotmart e atualizar os pontos da página que dizem sete dias, incluindo o nome do bloco.</span></li>
+        <li><span>Renomear a "Garantia Presença Total" para eliminar o eco do mecanismo vetado.</span></li>
+        <li><span>Cravar com a Bel o número de famílias atendidas. A página traz "mais de 2.000" e vale ter o dado confirmado antes de amplificá-lo.</span></li>
+        <li><span>Resolver o conflito dos cinco pilares: a página, a Mandala e a aula do curso listam conjuntos diferentes. Se a ação amplificar isso, a aluna entra e vê outros cinco.</span></li>
+        <li><span>Autorização por escrito das cinco mães dos depoimentos, para uso em stories (o consentimento atual cobre só a página).</span></li>
+        <li><span>Checar com a Bel um detalhe dos depoimentos: na página, a Alessandra Wolanin e a Gabrieli aparecem as duas como "mãe do Gael". Se forem dois meninos diferentes, tudo bem, mas vale confirmar, porque para quem lê de fora parece depoimento repetido.</span></li>
+        <li><span>Gravar o Kit Socorro, o guia do adulto que desautoriza e o Caminho Mínimo. Uma tarde de gravação.</span></li>
+        <li><span>Compra teste real no checkout, com estorno, e link testado no navegador interno do Instagram em iOS e Android.</span></li>
+        <li><span>Conferir o valor exato da parcela no checkout antes de falar qualquer número em público.</span></li>
+        <li><span>Criar e testar a lista de transmissão do WhatsApp.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============== METAS =============== -->
+<section id="metas">
+  <div class="wrap">
+    <div class="sec-head col">
+      <p class="eyebrow">10 &middot; As metas</p>
+      <h2>Combinar a régua antes, não depois</h2>
+      <p class="lede">Uma expert que espera 50 vendas e faz 6 conclui que fracassou e nunca mais quer lançar. Uma que espera 5 e faz 6 conclui que funciona e quer repetir. A conversa sobre expectativa vale tanto quanto a estratégia.</p>
+    </div>
+
+    <dl class="kpi">
+      <div>
+        <dt>Piso</dt>
+        <dd><span class="big">2 a 3</span><span class="sub">vendas &middot; R$ 1.394 a R$ 2.091. Já supera todo o histórico do produto e valida o funil.</span></dd>
+      </div>
+      <div>
+        <dt>Cenário provável</dt>
+        <dd><span class="big">5 a 8</span><span class="sub">vendas &middot; R$ 3.485 a R$ 5.576. É o resultado com execução limpa.</span></dd>
+      </div>
+      <div>
+        <dt>Teto</dt>
+        <dd><span class="big">12 a 15</span><span class="sub">vendas &middot; R$ 8.364 a R$ 10.455. Acontece se um reel do aquecimento estourar.</span></dd>
+      </div>
+    </dl>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Etapa</th><th>Meta</th><th>O que significa se ficar abaixo</th></tr></thead>
+        <tbody>
+          <tr><td>Entrada na lista (dias 1 a 4)</td><td>2 a 3% dos seguidores</td><td>Abaixo de 40 pessoas, o problema é gancho de conteúdo, não oferta. Estender o aquecimento antes de abrir.</td></tr>
+          <tr><td>Cliques na página nas primeiras 48h</td><td>25 a 35% da lista</td><td>Abaixo de 10%, a promessa da abertura não conectou. Reescrever o ângulo.</td></tr>
+          <tr><td>Perguntas espontâneas sobre preço</td><td>10 a 15 na janela</td><td>Se ninguém pergunta preço, ninguém está considerando comprar. É o sinal mais precoce que existe.</td></tr>
+          <tr><td>Presença na live</td><td>10 a 20% da lista</td><td>O lembrete falhou ou o horário está errado. Não diz nada sobre a oferta.</td></tr>
+          <tr><td>Conversão sobre a lista</td><td>2 a 5%</td><td>Menos de 1% indica desalinhamento entre o aquecimento e o produto.</td></tr>
+          <tr><td>Checkouts iniciados que se concluem</td><td>acima de 50%</td><td>Se muitos abandonam, o gargalo é preço, parcelamento ou meio de pagamento.</td></tr>
+          <tr><td>Vendas nas últimas 36h</td><td>40 a 60% do total</td><td>Se o último dia não trouxer nada, a urgência não foi crível ou não foi comunicada.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col">
+      <h3>A métrica que mais importa não é a venda</h3>
+      <p>É o tamanho da lista de WhatsApp e o mapa de objeções coletado nas DMs. A segunda ação abre com uma lista pronta, com copy escrita nas palavras exatas das mães, e com o funil já testado. É onde o dinheiro aparece de verdade.</p>
+
+      <div class="note">
+        <p class="eyebrow">Combinar com a Bel antes do dia 1</p>
+        <p style="margin-bottom:0">O que conta como sucesso nesta primeira rodada: lista construída, funil testado, objeções mapeadas, e as primeiras alunas da turma. Escrever isso e mandar para ela antes de começar, para que ninguém redefina a régua no meio do caminho.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p style="margin-bottom:.4rem"><strong>Fabricio Kaempf | Estrategista Digital</strong> &middot; @fabriciokaempf</p>
+    <p style="margin:0">Playbook da ação orgânica &middot; Coprodução Maria Izabel da Rosa &middot; agosto de 2026</p>
+  </div>
+</footer>
+</body>
+</html>
